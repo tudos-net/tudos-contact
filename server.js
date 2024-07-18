@@ -33,7 +33,7 @@ app.post('/contact', async (req, res) => {
         from: process.env.EMAIL,    // sender address
         to: email,       // list of receivers
         subject: 'New Contact Form Submission',
-        text: `Email: ${email}\n Phone Number: ${number}\nTelegram: ${telegram}\nWallet Address: ${wallet}\n Amount Invested In USDT: $ ${amount}`
+        text: `Email: ${email}\nPhone Number: ${number}\nTelegram: ${telegram}\nWallet Address: ${wallet}\nAmount Invested In USDT: $ ${amount}`
     };
 
     // Send mail
