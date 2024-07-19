@@ -31,7 +31,7 @@ app.post('/contact', async (req, res) => {
     // Setup email data
     let mailOptions = {
         from: process.env.EMAIL,    // sender address
-        to: email,       // list of receivers
+        to: "contact.infinityblockchain@gmail.com",       // list of receivers
         subject: 'New Contact Form Submission',
         text: `Email: ${email}\nPhone Number: ${number}\nTelegram: ${telegram}\nWallet Address: ${wallet}\nAmount Invested In USDT: $ ${amount}`
     };
